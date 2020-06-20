@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+        <com.yalantis.phoenix.PullToRefreshView
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/list_view"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.yalantis.phoenix.PullToRefreshView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/myimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="200dp"
+            >
+        </ImageView>
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/linearLayout"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/linearLayout">-->
+
+<!--        <WebView-->
+<!--            android:id="@+id/web_view"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/tu" />
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/home"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_home"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/hot"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_hot"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_margin="15dp"
+            android:background="@drawable/tool"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_tool"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/mor"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_more"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/me"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_me"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+
+<!--                    <com.github.rubensousa.raiflatbutton.RaiflatImageButton-->
+<!--                        android:id="@+id/b1"-->
+<!--                        style="@style/Base.Widget.AppCompat.Button"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:src="@mipmap/zhi" />-->
+
+        <!--            <com.github.rubensousa.raiflatbutton.RaiflatImageButton-->
+        <!--                    android:id="@+id/b2"-->
+        <!--                    style="@style/Base.Widget.AppCompat.Button"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:src="@mipmap/zhi" />-->
+
+        <!--            <com.flyco.tablayout.SlidingTabLayout-->
+        <!--                android:id="@+id/stl_main"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="?attr/actionBarSize"-->
+        <!--                app:tl_indicator_color="@color/colorPrimaryDark"-->
+        <!--                app:tl_indicator_height="3dp"-->
+        <!--                app:tl_textUnselectColor="@android:color/black"-->
+        <!--                app:tl_textSelectColor="@color/colorPrimaryDark"-->
+        <!--                app:tl_textsize="18sp"-->
+        <!--                app:tl_indicator_width_equal_title="true"-->
+        <!--                app:tl_tab_space_equal="true"-->
+        <!--                app:tl_divider_color="@color/colorAccent"-->
+        <!--                app:tl_divider_width="1dp">-->
+        <!--            </com.flyco.tablayout.SlidingTabLayout>-->
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

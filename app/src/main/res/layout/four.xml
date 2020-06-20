@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+<!--    <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--        android:id="@+id/jellyToggleButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/home"-->
+<!--        app:jtbJelly="random"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--        android:id="@+id/tog1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:jtbLeftTextTypeface="fonts/Lato-Hairline.ttf"-->
+<!--        app:jtbRightTextTypeface="fonts/Lato-Hairline.ttf"-->
+<!--        />-->
+    <com.nightonke.jellytogglebutton.JellyToggleButton
+        android:id="@+id/tog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        app:jtbTouchMoveRatioValue="2.8"
+        app:jtbJelly="random"
+        app:jtbLeftBackgroundColor="@android:color/holo_blue_dark"
+        app:jtbLeftText="choice"
+        app:jtbLeftTextColor="@android:color/black"
+        app:jtbLeftTextSize="10sp"
+        app:jtbLeftThumbColor="@android:color/white"
+        app:jtbRightBackgroundColor="@android:color/white"
+        app:jtbRightText="购物海淘"
+        app:jtbRightTextColor="@android:color/white"
+        app:jtbRightTextSize="10sp"
+        app:jtbRightThumbColor="@android:color/black"
+        app:jtbTextMarginBottom="2dp"
+        app:jtbTextMarginCenter="4dp"
+        app:jtbTextMarginLeft="2dp"
+        app:jtbTextMarginRight="2dp"
+        app:jtbTextMarginTop="2dp" />
+
+    <com.nightonke.jellytogglebutton.JellyToggleButton
+        android:id="@+id/tog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        app:jtbJelly="random"
+        app:jtbLeftBackgroundColor="@color/positive_button_color"
+        app:jtbLeftText="choice"
+        app:jtbLeftTextColor="@android:color/black"
+        app:jtbLeftTextSize="10sp"
+        app:jtbLeftThumbColor="@android:color/white"
+        app:jtbRightBackgroundColor="@android:color/white"
+        app:jtbRightText="娱乐休闲"
+        app:jtbRightTextColor="@android:color/white"
+        app:jtbRightTextSize="10sp"
+        app:jtbRightThumbColor="@android:color/black"
+        app:jtbTextMarginBottom="2dp"
+        app:jtbTextMarginCenter="4dp"
+        app:jtbTextMarginLeft="2dp"
+        app:jtbTextMarginRight="2dp"
+        app:jtbTextMarginTop="2dp"
+        app:jtbTouchMoveRatioValue="2.8" />
+
+    <com.nightonke.jellytogglebutton.JellyToggleButton
+        android:id="@+id/tog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        app:jtbTouchMoveRatioValue="2.8"
+        app:jtbJelly="random"
+        app:jtbLeftBackgroundColor="@color/thistle"
+        app:jtbLeftText="choice"
+        app:jtbLeftTextColor="@android:color/black"
+        app:jtbLeftTextSize="10sp"
+        app:jtbLeftThumbColor="@android:color/white"
+        app:jtbRightBackgroundColor="@android:color/white"
+        app:jtbRightText="资讯信息"
+        app:jtbRightTextColor="@android:color/white"
+        app:jtbRightTextSize="10sp"
+        app:jtbRightThumbColor="@android:color/black"
+        app:jtbTextMarginBottom="2dp"
+        app:jtbTextMarginCenter="4dp"
+        app:jtbTextMarginLeft="2dp"
+        app:jtbTextMarginRight="2dp"
+        app:jtbTextMarginTop="2dp" />
+    <com.nightonke.jellytogglebutton.JellyToggleButton
+        android:id="@+id/tog4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        app:jtbTouchMoveRatioValue="2.8"
+        app:jtbJelly="random"
+        app:jtbLeftBackgroundColor="@color/powderblue"
+        app:jtbLeftText="choice"
+        app:jtbLeftTextColor="@android:color/black"
+        app:jtbLeftTextSize="10sp"
+        app:jtbLeftThumbColor="@android:color/white"
+        app:jtbRightBackgroundColor="@android:color/white"
+        app:jtbRightText="生活周边"
+        app:jtbRightTextColor="@android:color/white"
+        app:jtbRightTextSize="10sp"
+        app:jtbRightThumbColor="@android:color/black"
+        app:jtbTextMarginBottom="2dp"
+        app:jtbTextMarginCenter="4dp"
+        app:jtbTextMarginLeft="2dp"
+        app:jtbTextMarginRight="2dp"
+        app:jtbTextMarginTop="2dp" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/MF1"
+        app:mtf_image="@mipmap/duanxin"
+        app:mtf_labelColor="#666"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:hint="Name:"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/MF2"
+        app:mtf_image="@mipmap/diannao"
+        app:mtf_labelColor="#666"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et2"
+            android:inputType="textUri"
+            android:hint="Url:"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <ImageView
+        android:id="@+id/add_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="210dp"
+        android:visibility="invisible"
+        android:src="@mipmap/xiaobiaoqing">
+
+    </ImageView>
+</RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="330dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/peng" />
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/home"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_home"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/hot"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_hot"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_margin="15dp"
+            android:background="@drawable/tool"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_tool"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_content"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom='true'
+            android:layout_centerHorizontal='true'
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/me"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding='5dp'
+            android:text="@string/app_me"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

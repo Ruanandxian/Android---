@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Smile</string>
+    <string name="app_content">smile</string>
+    <string name="app_home">Header</string>
+    <string name="app_hot">map</string>
+    <string name="app_tool">time</string>
+    <string name="app_more">increase</string>
+    <string name="app_me">more</string>
+    <string name="enter_title">Enter Title</string>
+</resources>

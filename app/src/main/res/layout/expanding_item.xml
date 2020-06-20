@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--94,android:fontFamily="@font/muli"-->
+<!--<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent" android:layout_height="54dp">-->
+    <!-- Bottom View Start-->
+<!--    <LinearLayout-->
+<!--        android:tag="Bottom2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/trash"-->
+<!--            android:src="@mipmap/trash"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:background="@drawable/hot"-->
+<!--            android:paddingLeft="25dp"-->
+<!--            android:paddingRight="25dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="italic"/>
+
+
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/jingdong" />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/add_more_sub_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/shezhi"/>
+
+
+            <ImageView
+                android:id="@+id/remove_it"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="170dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/fls"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/add_it"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="205dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:visibility="visible"-->
+<!--                app:srcCompat="@mipmap/yes"/>-->
+
+
+
+
+            <!--    <ImageView-->
+        <!--        android:id="@+id/remove_item"-->
+        <!--        android:layout_width="48dp"-->
+        <!--        android:layout_height="48dp"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_marginEnd="8dp"-->
+        <!--        android:layout_marginRight="8dp"-->
+        <!--        android:layout_toStartOf="@id/add_more_sub_items"-->
+        <!--        android:layout_toLeftOf="@id/add_more_sub_items"-->
+        <!--        android:padding="12dp"-->
+        <!--        app:srcCompat="@mipmap/ic_delete"/>-->
+    </RelativeLayout>
+    <!-- Surface View End -->
+<!--</com.daimajia.swipe.SwipeLayout>-->
